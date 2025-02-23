@@ -1,11 +1,10 @@
-from flask import Flask, request, make_response
+ls521from flask import Flask, request, make_response
 import hashlib
 import os
-
 app = Flask(__name__)
 
 # 微信 Token
-TOKEN = os.getenv('WECHAT_TOKEN', 'your_token')  # 从环境变量中读取 Token
+TOKEN = os.getenv('WECHAT_TOKEN', 'dearls521')  # 从环境变量中读取 Token
 
 @app.route('/wechat', methods=['GET', 'POST'])
 def wechat():
